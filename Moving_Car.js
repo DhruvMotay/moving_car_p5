@@ -4,7 +4,7 @@ let carY;
 let carSpeed = 3;
 
 function setup() {
-  createCanvas(800, 400);
+  createCanvas(1000, 400);
   // Start car in the middle vertically
   carY = height / 2;
 }
@@ -15,7 +15,25 @@ function draw() {
   background(135, 206, 235);
 
   // ===== BEGIN BILLBOARD HERE =====
+  fill(0, 0, 0)
+  rect(160, 150, 5, 100)
+  rect(60, 150, 5, 100)
+  fill(20, 20, 400)
+  rect(10, 90, 200, 100, 20)
+  fill(400,400,400)
+  let s = 'Sign Ahead';
+  textSize(30);
+  text(s, 30, 120, [200], [100])
   
+  fill(0, 0, 0)
+  rect(930, 150, 5, 100)
+  rect(830, 150, 5, 100)
+  fill(20, 20, 400)
+  rect(780, 90, 200, 100, 20)
+  fill(400,400,400)
+  let b = 'Sign Behind';
+  textSize(30);
+  text(b, 800, 120, [200], [100])
   // ===== END BILLBOARD HERE =====
 
   // ===== DRAW GRASS =====
